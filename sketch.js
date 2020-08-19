@@ -57,7 +57,7 @@ function draw() {
   background('white');
                                                         
     textSize(20);
- text('SCORE:'+score,500,50); 
+ text('SCORE:'+score,450,50); 
   
   if (gamestate==='play') {
     
@@ -66,13 +66,13 @@ function draw() {
   if (quo%2===0) {
     background("white");
     fill("black");
-     text('SCORE:'+score,500,50);                     
+     text('SCORE:'+score,450,50);                     
   
   }
   if (quo%2!=0) {
    background('black');
     fill("white");
-     text('SCORE:'+score,500,50);   
+     text('SCORE:'+score,450,50);   
   }
   
    if (keyDown("space")&&(trex.y>=159)){                                     
