@@ -32,8 +32,7 @@ trexsupport.visible=false;
 //to create path and its animation;
  ground= createSprite(200,180,400,20);
 ground.addImage(groundimage);
-ground.velocityX=-10;
-ground.velocityY=0;
+
 trex.depth=2;
 
  game_over = createSprite(300,100);
@@ -60,7 +59,8 @@ function draw() {
  text('SCORE:'+score,450,50); 
   
   if (gamestate==='play') {
-    
+    ground.velocityX=-10;
+ground.velocityY=0;
      score= score+Math.round(getFrameRate()/60)
   quo = Math.round(score/1000);
   if (quo%2===0) {
