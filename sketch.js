@@ -127,6 +127,7 @@ if (obstaclegroup.isTouching(trex)) {
             obstaclegroup.destroyEach()
              cloudgroup.destroyEach()
             ground.velocityX=-10,
+              ground.velocityY=0,
              //trex.changeAnimation('running')
             trex.play()
              score=0
